@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: keycloak-test
+
+keycloak:
+  realm: test
+  client-id: user-service-client
+  auth-server-url: http://localhost:8081/auth/
+  credentials:
+    secret: GdMGmjDTDpYRRbxEzNd8L4eD9YfD0AEq
+  resource: client
+  bearer-only: true
+  principal-attribute: preferred_username
+  admin-username: admin123
+  admin-password: admin123
+  grant-type: password
